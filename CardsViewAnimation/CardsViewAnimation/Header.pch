@@ -1,0 +1,156 @@
+//
+//  Header.pch
+//  CardsViewAnimation
+//
+//  Created by LMSJ_iOS on 2018/8/6.
+//  Copyright © 2018年 LMSJ_iOS. All rights reserved.
+//
+
+#ifndef Header_pch
+#define Header_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Header_pch */
+
+
+//---------------------常用宏-------------------------
+#define JMNotification [NSNotificationCenter defaultCenter]
+#define _FONT_ @"HelveticaNeue-Light"
+
+#define _FONT_BOLDMT @"HelveticaNeue-Bold"
+
+#define SET_FONT(n, s) [UIFont fontWithName:n size:s]
+
+#define SET_IMAGE(n) [UIImage imageNamed:n]
+
+#define SET_COLOR(n) [UIColor n]
+#define HEXCOLOR(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//设置颜色
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define RGBONLYCOLOR(x) [UIColor colorWithRed:(x)/255.0 green:(x)/255.0 blue:(x)/255.0 alpha:1]
+#define RGBAONLYCOLOR(x,a) [UIColor colorWithRed:(x)/255.0 green:(x)/255.0 blue:(x)/255.0 alpha:(a)]
+#define RGBREDCOLOR [UIColor colorWithRed:(255)/255.0 green:(51)/255.0 blue:(0)/255.0 alpha:1]
+#define RGBGREYCOLOR RGBONLYCOLOR(200)
+#define new_scale ([UIScreen mainScreen].bounds.size.width / 320)
+#define new_scale_6 ([UIScreen mainScreen].bounds.size.width / 375.0)
+#define allToNsstring NSString stringWithFormat:@"%@",
+#define kShareAppDelegate ((AppDelegate*)[UIApplication sharedApplication].delegate)
+///*
+// * iPhone statusbar 高度
+// */
+//#define PHONE_STATUSBAR_HEIGHT 20
+/*
+ *屏幕宽度
+ */
+#define SCREEN_WIDTH ([[UIScreen mainScreen]bounds].size.width)
+
+/*
+ *屏幕高度
+ */
+
+#define SCREEN_HEIGHT ([[UIScreen mainScreen]bounds].size.height)
+/*
+ * iPhone 屏幕尺寸
+ */
+#define PHONE_SCREEN_SIZE (CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT - PHONE_STATUSBAR_HEIGHT))
+#define IS_IOS_7 ([[[UIDevice currentDevice] systemVersion] doubleValue]>=7.0)?YES:NO
+#define IS_IOS_8 ([[[UIDevice currentDevice] systemVersion] doubleValue]>=8.0)?YES:NO
+#define IS_IOS_9 ([[[UIDevice currentDevice] systemVersion] doubleValue]>=9.0)?YES:NO
+#define IS_IOS_11 ([[[UIDevice currentDevice] systemVersion] doubleValue]>=11.0)?YES:NO
+#define IS_IPAD     ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#define IS_iPhoneX  ((IS_IOS_11) && (SCREEN_HEIGHT == 812))
+#define IS_iPhoneWidth320   (SCREEN_HEIGHT == 320)
+#define StatusBarHeight ((IS_iPhoneX)?44:20)
+#define TabBarHeight ((IS_iPhoneX)? 64 + 34:70)
+#define VirtualHomeHeight ((IS_iPhoneX)?34:0)
+#define NavBarHeight 44
+#define WinSize  [UIScreen mainScreen].bounds.size
+#define appBounds [[UIScreen mainScreen] applicationFrame]
+
+#define isIPhone5       ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define isIPhone6       ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)) : NO)
+#define isIPhone6p      ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
+#define isIPhoneX      ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+#define CURRENT_SYSTEM_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define kAppVersion     ([[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"])
+#define kAppBuildVersion ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"])
+
+#define NSUSERDF [NSUserDefaults standardUserDefaults]
+#define STRING_ISNSNULL(__POINTER) ([__POINTER isEqual:[NSNull null]])?YES:NO
+#define STRING_ISNIL(__POINTER) ([__POINTER isKindOfClass:[NSNull class]] || __POINTER == nil || [__POINTER isEqualToString:@""] || [__POINTER isEqualToString:@"(null)"] || [__POINTER isEqualToString:@"null"] || [__POINTER isEqualToString:@"(NULL)"] || [__POINTER isEqualToString:@"NULL"] || [__POINTER isEqualToString:@"<null>"] || [__POINTER isEqualToString:@"<NULL>"])?YES:NO
+
+#define IS_NULL(x)          (!x || [x isKindOfClass:[NSNull class]])
+#define IS_EMPTY_STRING(x)  (IS_NULL(x) || [x isEqual:@""] || [x isEqual:@"(null)"] || [x isEqual:@"<null>"])
+#define DEFUSE_EMPTY_STRING(x)     (!IS_EMPTY_STRING(x) ? x : @"")
+
+#if defined(DEBUG) && DEBUG
+#define   TEST_MCP_MODE YES
+#else
+#define   TEST_MCP_MODE NO
+#endif
+
+#define SET_COLORRGB(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+
+#define CustomStr(key) [CacheLanguageType showText:(key)];
+
+#define CustomValueStr(key) [CacheLanguageType showText:(key)]
+
+#define KIsBlankString(str)  [CustomTools isBlankString:str]
+
+#define NotNilString(xxx)  xxx ? :@""
+
+#define NSStringFromInt(int)            [NSString stringWithFormat:@"%d", int]
+#define NSStringFromFloat(float)        [NSString stringWithFormat:@"%f", float]
+#define NSStringFromNSInteger(integer)  [NSString stringWithFormat:@"%ld", (long)integer]
+#define NSStringFromNSNumber(number)    [NSString stringWithFormat:@"%@", number]
+
+#define EncodeFormDic(dict,key)         [dict decodeStringFormDictWithKey:key]
+#define EncodeArrayFormDic(dict,key)    [dict decodeArrayFormDictWithKey:key]
+#define EncodeDic(dict,key)             [dict decodeDictionaryFormDictWithKey:key]
+#define UploadVideoDocumentsAppendingStringPath(xxxx)        [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:xxxx]
+
+#define PostVideoPath UploadVideoDocumentsAppendingStringPath(@"/finish.mp4")
+#define PostVideoTempPath UploadVideoDocumentsAppendingStringPath(@"/temp.mp4")
+#define PostVideoFilterPath UploadVideoDocumentsAppendingStringPath(@"/filter.mp4")
+
+#ifndef weakify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+#else
+#define weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+#else
+#define weakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+#endif
+#endif
+#endif
+
+#ifndef strongify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define strongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object) try{} @finally{} __typeof__(object) object = block##_##object;
+#endif
+#endif
+#endif
+
+
+#import "UIView+addition.h"

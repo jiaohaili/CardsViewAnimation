@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD62DAAD2117E60700B12525 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62DAAC2117E60700B12525 /* AppDelegate.m */; };
+		CD62DAB02117E60700B12525 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62DAAF2117E60700B12525 /* ViewController.m */; };
+		CD62DAB32117E60700B12525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD62DAB12117E60700B12525 /* Main.storyboard */; };
+		CD62DAB52117E60900B12525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD62DAB42117E60900B12525 /* Assets.xcassets */; };
+		CD62DAB82117E60900B12525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD62DAB62117E60900B12525 /* LaunchScreen.storyboard */; };
+		CD62DABB2117E60900B12525 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62DABA2117E60900B12525 /* main.m */; };
+		CD62DAC52117E60900B12525 /* CardsViewAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62DAC42117E60900B12525 /* CardsViewAnimationTests.m */; };
+		CD62DAD02117E60900B12525 /* CardsViewAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62DACF2117E60900B12525 /* CardsViewAnimationUITests.m */; };
+		CD62DAE12117E70F00B12525 /* CardsAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62DADD2117E70E00B12525 /* CardsAnimationView.m */; };
+		CD62DAE22117E70F00B12525 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62DAE02117E70F00B12525 /* CardView.m */; };
+		CD62DAE62117E72000B12525 /* UIView+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62DAE52117E72000B12525 /* UIView+addition.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD62DAC12117E60900B12525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD62DAA02117E60700B12525 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD62DAA72117E60700B12525;
+			remoteInfo = CardsViewAnimation;
+		};
+		CD62DACC2117E60900B12525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD62DAA02117E60700B12525 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD62DAA72117E60700B12525;
+			remoteInfo = CardsViewAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD62DAA82117E60700B12525 /* CardsViewAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardsViewAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD62DAAB2117E60700B12525 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CD62DAAC2117E60700B12525 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CD62DAAE2117E60700B12525 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CD62DAAF2117E60700B12525 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CD62DAB22117E60700B12525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD62DAB42117E60900B12525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD62DAB72117E60900B12525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD62DAB92117E60900B12525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD62DABA2117E60900B12525 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD62DAC02117E60900B12525 /* CardsViewAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsViewAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD62DAC42117E60900B12525 /* CardsViewAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardsViewAnimationTests.m; sourceTree = "<group>"; };
+		CD62DAC62117E60900B12525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD62DACB2117E60900B12525 /* CardsViewAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardsViewAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD62DACF2117E60900B12525 /* CardsViewAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardsViewAnimationUITests.m; sourceTree = "<group>"; };
+		CD62DAD12117E60900B12525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD62DADD2117E70E00B12525 /* CardsAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardsAnimationView.m; sourceTree = "<group>"; };
+		CD62DADE2117E70F00B12525 /* CardsAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardsAnimationView.h; sourceTree = "<group>"; };
+		CD62DADF2117E70F00B12525 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		CD62DAE02117E70F00B12525 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		CD62DAE42117E72000B12525 /* UIView+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+addition.h"; sourceTree = "<group>"; };
+		CD62DAE52117E72000B12525 /* UIView+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+addition.m"; sourceTree = "<group>"; };
+		CD62DAE72117E79B00B12525 /* Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD62DAA52117E60700B12525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD62DABD2117E60900B12525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD62DAC82117E60900B12525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD62DA9F2117E60700B12525 = {
+			isa = PBXGroup;
+			children = (
+				CD62DAAA2117E60700B12525 /* CardsViewAnimation */,
+				CD62DAC32117E60900B12525 /* CardsViewAnimationTests */,
+				CD62DACE2117E60900B12525 /* CardsViewAnimationUITests */,
+				CD62DAA92117E60700B12525 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD62DAA92117E60700B12525 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD62DAA82117E60700B12525 /* CardsViewAnimation.app */,
+				CD62DAC02117E60900B12525 /* CardsViewAnimationTests.xctest */,
+				CD62DACB2117E60900B12525 /* CardsViewAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD62DAAA2117E60700B12525 /* CardsViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				CD62DAE32117E72000B12525 /* UIView+addition */,
+				CD62DAAB2117E60700B12525 /* AppDelegate.h */,
+				CD62DAAC2117E60700B12525 /* AppDelegate.m */,
+				CD62DAAE2117E60700B12525 /* ViewController.h */,
+				CD62DAAF2117E60700B12525 /* ViewController.m */,
+				CD62DADE2117E70F00B12525 /* CardsAnimationView.h */,
+				CD62DADD2117E70E00B12525 /* CardsAnimationView.m */,
+				CD62DADF2117E70F00B12525 /* CardView.h */,
+				CD62DAE02117E70F00B12525 /* CardView.m */,
+				CD62DAE72117E79B00B12525 /* Header.pch */,
+				CD62DAB12117E60700B12525 /* Main.storyboard */,
+				CD62DAB42117E60900B12525 /* Assets.xcassets */,
+				CD62DAB62117E60900B12525 /* LaunchScreen.storyboard */,
+				CD62DAB92117E60900B12525 /* Info.plist */,
+				CD62DABA2117E60900B12525 /* main.m */,
+			);
+			path = CardsViewAnimation;
+			sourceTree = "<group>";
+		};
+		CD62DAC32117E60900B12525 /* CardsViewAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD62DAC42117E60900B12525 /* CardsViewAnimationTests.m */,
+				CD62DAC62117E60900B12525 /* Info.plist */,
+			);
+			path = CardsViewAnimationTests;
+			sourceTree = "<group>";
+		};
+		CD62DACE2117E60900B12525 /* CardsViewAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD62DACF2117E60900B12525 /* CardsViewAnimationUITests.m */,
+				CD62DAD12117E60900B12525 /* Info.plist */,
+			);
+			path = CardsViewAnimationUITests;
+			sourceTree = "<group>";
+		};
+		CD62DAE32117E72000B12525 /* UIView+addition */ = {
+			isa = PBXGroup;
+			children = (
+				CD62DAE42117E72000B12525 /* UIView+addition.h */,
+				CD62DAE52117E72000B12525 /* UIView+addition.m */,
+			);
+			path = "UIView+addition";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD62DAA72117E60700B12525 /* CardsViewAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD62DAD42117E60900B12525 /* Build configuration list for PBXNativeTarget "CardsViewAnimation" */;
+			buildPhases = (
+				CD62DAA42117E60700B12525 /* Sources */,
+				CD62DAA52117E60700B12525 /* Frameworks */,
+				CD62DAA62117E60700B12525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardsViewAnimation;
+			productName = CardsViewAnimation;
+			productReference = CD62DAA82117E60700B12525 /* CardsViewAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD62DABF2117E60900B12525 /* CardsViewAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD62DAD72117E60900B12525 /* Build configuration list for PBXNativeTarget "CardsViewAnimationTests" */;
+			buildPhases = (
+				CD62DABC2117E60900B12525 /* Sources */,
+				CD62DABD2117E60900B12525 /* Frameworks */,
+				CD62DABE2117E60900B12525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD62DAC22117E60900B12525 /* PBXTargetDependency */,
+			);
+			name = CardsViewAnimationTests;
+			productName = CardsViewAnimationTests;
+			productReference = CD62DAC02117E60900B12525 /* CardsViewAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD62DACA2117E60900B12525 /* CardsViewAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD62DADA2117E60900B12525 /* Build configuration list for PBXNativeTarget "CardsViewAnimationUITests" */;
+			buildPhases = (
+				CD62DAC72117E60900B12525 /* Sources */,
+				CD62DAC82117E60900B12525 /* Frameworks */,
+				CD62DAC92117E60900B12525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD62DACD2117E60900B12525 /* PBXTargetDependency */,
+			);
+			name = CardsViewAnimationUITests;
+			productName = CardsViewAnimationUITests;
+			productReference = CD62DACB2117E60900B12525 /* CardsViewAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD62DAA02117E60700B12525 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = LMSJ_iOS;
+				TargetAttributes = {
+					CD62DAA72117E60700B12525 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					CD62DABF2117E60900B12525 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CD62DAA72117E60700B12525;
+					};
+					CD62DACA2117E60900B12525 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = CD62DAA72117E60700B12525;
+					};
+				};
+			};
+			buildConfigurationList = CD62DAA32117E60700B12525 /* Build configuration list for PBXProject "CardsViewAnimation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD62DA9F2117E60700B12525;
+			productRefGroup = CD62DAA92117E60700B12525 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD62DAA72117E60700B12525 /* CardsViewAnimation */,
+				CD62DABF2117E60900B12525 /* CardsViewAnimationTests */,
+				CD62DACA2117E60900B12525 /* CardsViewAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD62DAA62117E60700B12525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD62DAB82117E60900B12525 /* LaunchScreen.storyboard in Resources */,
+				CD62DAB52117E60900B12525 /* Assets.xcassets in Resources */,
+				CD62DAB32117E60700B12525 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD62DABE2117E60900B12525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD62DAC92117E60900B12525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD62DAA42117E60700B12525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD62DAB02117E60700B12525 /* ViewController.m in Sources */,
+				CD62DABB2117E60900B12525 /* main.m in Sources */,
+				CD62DAE62117E72000B12525 /* UIView+addition.m in Sources */,
+				CD62DAE22117E70F00B12525 /* CardView.m in Sources */,
+				CD62DAAD2117E60700B12525 /* AppDelegate.m in Sources */,
+				CD62DAE12117E70F00B12525 /* CardsAnimationView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD62DABC2117E60900B12525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD62DAC52117E60900B12525 /* CardsViewAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD62DAC72117E60900B12525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD62DAD02117E60900B12525 /* CardsViewAnimationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD62DAC22117E60900B12525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD62DAA72117E60700B12525 /* CardsViewAnimation */;
+			targetProxy = CD62DAC12117E60900B12525 /* PBXContainerItemProxy */;
+		};
+		CD62DACD2117E60900B12525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD62DAA72117E60700B12525 /* CardsViewAnimation */;
+			targetProxy = CD62DACC2117E60900B12525 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD62DAB12117E60700B12525 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD62DAB22117E60700B12525 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD62DAB62117E60900B12525 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD62DAB72117E60900B12525 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD62DAD22117E60900B12525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD62DAD32117E60900B12525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD62DAD52117E60900B12525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6546S5LLN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CardsViewAnimation/Header.pch";
+				INFOPLIST_FILE = CardsViewAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haili.NewDemo.CardsViewAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD62DAD62117E60900B12525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6546S5LLN;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CardsViewAnimation/Header.pch";
+				INFOPLIST_FILE = CardsViewAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haili.NewDemo.CardsViewAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD62DAD82117E60900B12525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6546S5LLN;
+				INFOPLIST_FILE = CardsViewAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haili.NewDemo.CardsViewAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardsViewAnimation.app/CardsViewAnimation";
+			};
+			name = Debug;
+		};
+		CD62DAD92117E60900B12525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6546S5LLN;
+				INFOPLIST_FILE = CardsViewAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haili.NewDemo.CardsViewAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardsViewAnimation.app/CardsViewAnimation";
+			};
+			name = Release;
+		};
+		CD62DADB2117E60900B12525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6546S5LLN;
+				INFOPLIST_FILE = CardsViewAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haili.NewDemo.CardsViewAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CardsViewAnimation;
+			};
+			name = Debug;
+		};
+		CD62DADC2117E60900B12525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6546S5LLN;
+				INFOPLIST_FILE = CardsViewAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haili.NewDemo.CardsViewAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CardsViewAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD62DAA32117E60700B12525 /* Build configuration list for PBXProject "CardsViewAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD62DAD22117E60900B12525 /* Debug */,
+				CD62DAD32117E60900B12525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD62DAD42117E60900B12525 /* Build configuration list for PBXNativeTarget "CardsViewAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD62DAD52117E60900B12525 /* Debug */,
+				CD62DAD62117E60900B12525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD62DAD72117E60900B12525 /* Build configuration list for PBXNativeTarget "CardsViewAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD62DAD82117E60900B12525 /* Debug */,
+				CD62DAD92117E60900B12525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD62DADA2117E60900B12525 /* Build configuration list for PBXNativeTarget "CardsViewAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD62DADB2117E60900B12525 /* Debug */,
+				CD62DADC2117E60900B12525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD62DAA02117E60700B12525 /* Project object */;
+}
