@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "CardsAnimationView.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) CardsAnimationView *cardsAnimationView;
 
 @end
 
@@ -16,14 +19,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self.view addSubview:self.cardsAnimationView];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (CardsAnimationView *)cardsAnimationView {
+    if (_cardsAnimationView == nil) {
+        _cardsAnimationView = [[CardsAnimationView alloc] initWithFrame:CGRectMake(20, 100, self.view.width - 20 *2, self.view.height - 100 *2)];
+        
+    }
+    return _cardsAnimationView;
 }
-
 
 @end
