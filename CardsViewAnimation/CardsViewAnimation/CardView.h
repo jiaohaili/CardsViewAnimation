@@ -12,4 +12,6 @@
 
 @property (nonatomic, assign) BOOL isFront;
 
+- (void)updateImage;
+
 @end

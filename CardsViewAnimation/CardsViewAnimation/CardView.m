@@ -7,22 +7,39 @@
 //
 
 #import "CardView.h"
+@interface CardView()
+
+@property (nonatomic, strong) UIImageView *cardImgView;
+
+@end
 
 @implementation CardView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        NSArray *arr = @[[UIColor redColor],
-                         [UIColor yellowColor],
-                         [UIColor cyanColor],
-                         [UIColor orangeColor],
-                         [UIColor brownColor],
-                         [UIColor purpleColor],
-                         [UIColor blueColor]];
-        self.backgroundColor = arr[arc4random()% 6];
+        [self addSubview:self.cardImgView];
+        [self.cardImgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"image_%d.png",arc4random() % 39]]];
+        
     }
     return self;
+}
+
+- (void)updateImage {
+    [self.cardImgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"image_%d.png",arc4random() % 39]]];
+}
+
+- (UIImageView *)cardImgView {
+    if (!_cardImgView) {
+        _cardImgView = [[UIImageView alloc] initWithFrame:self.bounds];
+        _cardImgView.backgroundColor = [UIColor yellowColor];
+        _cardImgView.contentMode = UIViewContentModeScaleAspectFill;
+        _cardImgView.clipsToBounds = YES;
+        [_cardImgView setContentScaleFactor:[[UIScreen mainScreen] scale]];
+        // 保证图片随着cardView 的 frame 改变而改变
+        _cardImgView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    }
+    return _cardImgView;
 }
 
 @end

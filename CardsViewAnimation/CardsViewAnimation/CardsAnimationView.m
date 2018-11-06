@@ -68,7 +68,7 @@ static CGFloat const kCardsViewIntervalHeight = 16;
         distenceX = touchPoint.x - self.toucheUpPoint.x;
     }
     
-    CGFloat angle = percent * M_PI/7;
+    CGFloat angle = percent * M_PI/5;
 
     // 第一个卡牌 随手势移动距离改变位移和旋转
     if (velocity.x > 0) {
@@ -100,7 +100,7 @@ static CGFloat const kCardsViewIntervalHeight = 16;
     //手势结束
     if (sender.state == UIGestureRecognizerStateEnded || sender.state == UIGestureRecognizerStateCancelled) {
         //right
-        if (velocity.x >= 50 || velocity.x < -50) {
+        if (velocity.x >= 80 || velocity.x < -80) {
             [self animationViewWithDirection:currentDirection cardAngle:angle timer:0.3];
         } else {
             [self animationViewWithDirection:0 cardAngle:angle timer:0.2];
@@ -134,6 +134,7 @@ static CGFloat const kCardsViewIntervalHeight = 16;
             [self sendSubviewToBack:self.currentFirstCardView];
             self.currentFirstCardView.hidden = YES;
             self.currentFirstCardView.transform = CGAffineTransformIdentity;
+            [self.currentFirstCardView updateImage];
             
             self.currentFirstCardView.frame = [self secondCardViewFrame];
             self.currentFirstCardView.hidden = NO;

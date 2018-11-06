@@ -25,6 +25,7 @@
 - (CardsAnimationView *)cardsAnimationView {
     if (_cardsAnimationView == nil) {
         _cardsAnimationView = [[CardsAnimationView alloc] initWithFrame:CGRectMake(20, 100, self.view.width - 20 *2, self.view.height - 100 *2)];
+//        _cardsAnimationView.backgroundColor = [UIColor blueColor];
         
     }
     return _cardsAnimationView;
